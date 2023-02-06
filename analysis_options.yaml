@@ -1,0 +1,23 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    todo: ignore
+    invalid_annotation_target: ignore
+
+linter:
+  rules:
+    file_names: false
+    flutter_style_todos: true
+    prefer_single_quotes: true
+    ignore_for_file: file_names
+    sort_pub_dependencies: false
+    require_trailing_commas: false
+    prefer_const_constructors: true
+    sort_child_properties_last: true
+    noop_primitive_operations: false
+    always_declare_return_types: true
+    depend_on_referenced_packages: false
+    use_setters_to_change_properties: false
+    avoid_classes_with_only_static_members: false
+    avoid_function_literals_in_foreach_calls: false
