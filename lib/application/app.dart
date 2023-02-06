@@ -1,3 +1,4 @@
+import 'package:ar_qr_scanner/application/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -18,6 +19,15 @@ class App extends StatelessWidget {
           title: AppInfo.appTitle,
           initialRoute: Routes.home,
           themeMode: ThemeMode.light,
+          theme: ThemeData.light(useMaterial3: true).copyWith(
+            backgroundColor: CustomColors.background,
+            scaffoldBackgroundColor: CustomColors.background,
+            textTheme: Typography.englishLike2018.apply(
+              fontSizeFactor: 0.8.sp,
+              bodyColor: Colors.black,
+              displayColor: Colors.black,
+            ),
+          ),
           debugShowCheckedModeBanner: false,
           defaultTransition: Transition.cupertino,
         );
